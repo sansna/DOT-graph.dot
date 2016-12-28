@@ -1,0 +1,11 @@
+digraph g {
+    node [shape=record,height=4,width=2]
+    node0[label="{<s>buckets[0]|buckets[1]|...|buckets[n]}|{<t>ptr|ptr|...|ptr}"];
+    node [shape=record,height=1,width=2]
+    key0[label="<t>nodes|<s>ptr"]
+    key1[label="<t>nodes|<s>ptr"]
+    key2[label="<t>nodes|<s>ptr"]
+    "node0":t -> "key0":t
+    "key0":s -> "key1":t
+    "key1":s -> "key2":t
+}
